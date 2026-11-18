@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechFest 2026</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="hero">
+    <h1>TechFest 2026</h1>
+    <p>Dec 12–13 • Main Auditorium</p>
+    <a href="#events" class="btn">Explore Events</a>
+</header>
+
+<main id="events" class="container">
+    <h2>Featured Events</h2>
+    <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="coding">Coding</button>
+        <button class="filter-btn" data-category="design">Design</button>
+        <button class="filter-btn" data-category="talks">Talks</button>
+    </div>
+    <div id="event-list" class="grid"></div>
+</main>
+
+<dialog id="reg-modal">
+    <form id="reg-form" method="dialog">
+        <h3 id="modal-title">Register</h3>
+        <input type="text" id="student-name" placeholder="Your Name" required />
+        <input type="email" id="student-email" placeholder="College Email" required />
+        <div class="modal-actions">
+            <button type="submit">Confirm</button>
+            <button type="button" id="close-modal">Cancel</button>
+        </div>
+    </form>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
